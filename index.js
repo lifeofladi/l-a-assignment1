@@ -1,7 +1,7 @@
 console.log("connected!!!");
 //User Object
 let user = {
-  username: "somefunc",
+  username: "username",
   age: generateAge(),
   description: "some description",
   img: "https://picsum.photos/50",
@@ -37,36 +37,29 @@ function appendChildren(parent, children) {
   }
   return parent;
 }
-//Generates 100 users
+
+//Generate 100 random users
 function createUserElements() {
   for (let i = 1; i <= 100; i++) {
     document.body.appendChild(creatUserElement());
   }
 }
 
-for (let i = 1; i <= 100; i++) {
-  document.body.appendChild(creatUserElement());
-}
-
-// createUserElements();
-// console.log(containerDiv);
+createUserElements();
 
 //Helper funtion to set multiple attributes to an element
 function setAttributes(element, attr) {
   for (let key in attr) {
-    el.setAttribute(key, attr[key]);
+    element.setAttribute(key, attr[key]);
   }
 }
+
 //generates random number
 function generateAge() {
   //returns numbers between 18 and 89 that represent user's age
   return Math.floor(Math.random() * (90 - 18) + 18);
 }
 
-// console.log(generateAge());
-
 //Generate random username
 
 //Generate random description
-
-//Generate random users
