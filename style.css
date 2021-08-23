@@ -20,4 +20,11 @@ body {
   text-align: center;
   border: 1px solid black;
   border-radius: 5px;
+  overflow: hidden;
+}
+
+.profile-img {
+  border-radius: 50%;
+  width: 40%;
+  margin: 5px auto;
 }
